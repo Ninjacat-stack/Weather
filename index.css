@@ -1,0 +1,140 @@
+/* Import a clean, modern font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    /* A nice sky-like gradient background */
+    background: linear-gradient(135deg, #74ebd5, #9face6);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+}
+
+.weather-card {
+    /* Glassmorphism effect */
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 40px;
+    border-radius: 24px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.search-input {
+    width: 80%;
+    padding: 14px 20px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.85);
+    color: #333333;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+.search-input:focus {
+    background: #ffffff;
+}
+
+.search-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    background: #ffffff;
+    color: #333333;
+    cursor: pointer;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+.search-btn:hover {
+    background: #74ebd5;
+    color: #ffffff;
+    transform: scale(1.05);
+}
+
+.weather-info .city {
+    font-size: 34px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+.weather-info .date {
+    font-size: 14px;
+    margin-top: 5px;
+    opacity: 0.85;
+}
+
+.weather-info .temperature h1 {
+    font-size: 72px;
+    font-weight: 600;
+    margin: 20px 0;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+
+.weather-info .description {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    font-size: 24px;
+    margin-bottom: 35px;
+    font-weight: 400;
+}
+
+.weather-icon {
+    font-size: 45px;
+    color: #fbd80f; /* Sun-like yellow */
+    text-shadow: 0 0 10px rgba(251, 216, 15, 0.5);
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 25px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.col {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-align: left;
+}
+
+.col i {
+    font-size: 28px;
+    opacity: 0.9;
+}
+
+.col p {
+    font-size: 13px;
+    opacity: 0.8;
+}
+
+.col p:first-child {
+    font-size: 18px;
+    font-weight: 600;
+    opacity: 1;
+}
